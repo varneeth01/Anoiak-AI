@@ -7,11 +7,9 @@ class UserInterface:
         self.ai_system = ai_system
         self.root = tk.Tk()
         self.root.title("Classroom AI Assistant")
-
         # Video display
         self.video_panel = tk.Label(self.root)
         self.video_panel.pack(side=tk.LEFT, padx=10, pady=10)
-
         # Summary and resources display
         self.summary_text = tk.Text(self.root, height=10, width=50)
         self.summary_text.pack(side=tk.TOP, padx=10, pady=10)
