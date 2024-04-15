@@ -1,4 +1,6 @@
 # resource_database.py
+
+
 import os
 import requests
 from bs4 import BeautifulSoup
