@@ -11,10 +11,8 @@ class Trainer:
     def __init__(self, data_dir, device):
         self.data_dir = data_dir
         self.device = device
-
         # Initialize the data preprocessor
         self.preprocessor = DataPreprocessor(self.data_dir, self.device)
-
         # Initialize the AI system modules
         self.lang_model = CustomLanguageModel(vocab_size=10000, embedding_dim=128, hidden_dim=256, num_layers=2).to(self.device)
         self.cv_module = ComputerVisionModule().to(self.device)
