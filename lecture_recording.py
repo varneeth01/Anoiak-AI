@@ -13,6 +13,8 @@ class LectureRecorder:
         self.audio_writer = None
 
     def start_recording(self, video_path, audio_path):
+
+
         # Start video recording
         fourcc = cv2.VideoWriter_fourcc(*'mp4v')
         self.video_writer = cv2.VideoWriter(video_path, fourcc, self.fps, self.video_resolution)
