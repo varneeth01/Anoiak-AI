@@ -32,6 +32,8 @@ class Evaluator:
         return lecture_summary, lecture_topic, additional_resources
 
 if __:
+
+
     # Set the device (CPU or GPU)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
