@@ -105,7 +105,6 @@
                             # Capture video and audio from the lecture
                             ret, frame = self.cap.read()
                             audio = self.r.listen(source)
-
                             # Record the lecture
                             self.lecture_recorder.record_frame(frame)
                             self.lecture_recorder.record_audio()
